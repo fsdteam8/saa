@@ -91,8 +91,14 @@ export default function CountdownTimer({
         </CardContent>
       </Card>
 
+      {isComplete && (
+        <p className="text-[35px] bg-gradient-to-r from-green-700 to-yellow-400 bg-clip-text text-transparent font-bold absolute left-1/2 bottom-[170px] transform -translate-x-1/2 ">
+          Alhamdulillah
+        </p>
+      )}
+
       <p className="text-[40px] bg-gradient-to-r from-green-700 to-yellow-400 bg-clip-text text-transparent font-bold absolute left-1/2 bottom-[100px] transform -translate-x-1/2">
-        Scale Up Ads Agency
+        ScaleUp Ads Agency
       </p>
 
       {showResetButton && isComplete && (
