@@ -11,7 +11,7 @@ import { CompletionDisplay } from "./ui/completion-display";
 import { CountdownDisplay } from "./ui/countdown-display";
 
 export default function CountdownTimer({
-  initialCount = 10,
+  initialCount = 50,
   deliveredAmount = 150000,
   currency = "$",
   countdownTitle = "Countdown Timer",
@@ -91,7 +91,7 @@ export default function CountdownTimer({
         </CardContent>
       </Card>
 
-      <p className="text-[40px] bg-gradient-to-r from-green-700 to-yellow-400 bg-clip-text text-transparent font-semibold absolute left-1/2 bottom-10 transform -translate-x-1/2">
+      <p className="text-[40px] bg-gradient-to-r from-green-700 to-yellow-400 bg-clip-text text-transparent font-bold absolute left-1/2 bottom-[100px] transform -translate-x-1/2">
         Scale Up Ads Agency
       </p>
 
