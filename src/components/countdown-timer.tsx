@@ -1,4 +1,3 @@
-// components/CountdownTimer/CountdownTimer.tsx
 "use client";
 
 import { Card, CardContent } from "@/components/ui/card";
@@ -16,7 +15,7 @@ export default function CountdownTimer({
   deliveredAmount = 150000,
   currency = "$",
   countdownTitle = "Countdown Timer",
-  countdownMessage = "Get ready for something amazing...",
+  countdownMessage = "Get ready gyes from something amazing...",
   completionTitle = "Congratulations!",
   showConfetti = true,
   confettiDuration = 60000,
@@ -68,7 +67,7 @@ export default function CountdownTimer({
   };
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#00B22D]/10 to-[#FFC300]/10 overflow-hidden">
+    <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-br bg-white overflow-hidden">
       <ConfettiAnimation show={showConfettiAnimation} />
 
       <Card className="w-full max-w-md mx-4 shadow-none border-0 bg-transparent backdrop-blur-sm">
@@ -91,6 +90,10 @@ export default function CountdownTimer({
           )}
         </CardContent>
       </Card>
+
+      <p className="text-[40px] bg-gradient-to-r from-green-700 to-yellow-400 bg-clip-text text-transparent font-semibold absolute left-1/2 bottom-10 transform -translate-x-1/2">
+        Scale Up Ads Agency
+      </p>
 
       {showResetButton && isComplete && (
         <ResetButton

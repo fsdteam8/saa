@@ -1,5 +1,4 @@
 // components/CountdownTimer/CountdownDisplay.tsx
-import { getColorClasses } from "@/lib/utils";
 
 interface CountdownDisplayProps {
   count: number;
@@ -12,7 +11,6 @@ export function CountdownDisplay({
   count,
   countdownTitle,
   countdownMessage,
-  primaryColor,
 }: CountdownDisplayProps) {
   return (
     <div className="space-y-6">
@@ -21,10 +19,7 @@ export function CountdownDisplay({
       </h1>
       <div className="relative">
         <div
-          className={`text-8xl font-bold ${getColorClasses(
-            primaryColor,
-            "text"
-          )} mb-4 animate-pulse`}
+          className={`text-[150px] font-bold bg-gradient-to-r from-green-700 to-yellow-400 bg-clip-text text-transparent  mb-4 animate-pulse`}
         >
           {count}
         </div>
